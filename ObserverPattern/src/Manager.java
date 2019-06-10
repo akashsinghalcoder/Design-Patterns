@@ -4,8 +4,6 @@ public class Manager {
 		Cricket cricket = new Cricket();
 		ScoreDisplay scoredisplay = new ScoreDisplay();
 		cricket.registerObservers(scoredisplay);
-		cricket.updateScore();
-		
+		cricket.updateScore();	
 	}
-
 }
