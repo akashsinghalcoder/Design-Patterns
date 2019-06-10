@@ -1,4 +1,6 @@
-public class SingletonDBConnection implements Cloneable {
+import java.io.Serializable;
+
+public class SingletonDBConnection implements Cloneable, Serializable {
 
     static private SingletonDBConnection instance;
 
@@ -32,6 +34,10 @@ public class SingletonDBConnection implements Cloneable {
     	return instance;
     }
     
+    protected Object readResolve() 
+    { 
+        return instance; 
+    } 
     
     
     
