@@ -1,4 +1,4 @@
-public class SingletonDBConnection {
+public class SingletonDBConnection implements Cloneable {
 
     static private SingletonDBConnection instance;
 
@@ -27,4 +27,12 @@ public class SingletonDBConnection {
         }
         return toBeReturned;
     }
+    
+    protected Object clone() throws CloneNotSupportedException {
+    	return instance;
+    }
+    
+    
+    
+    
 }

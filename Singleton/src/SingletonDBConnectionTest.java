@@ -10,6 +10,8 @@ public class SingletonDBConnectionTest {
         subject1.setVariableForTestingSingletonClass(40);
         SingletonDBConnection subject2 = SingletonDBConnection.getInstanceOfSingletonDBConnection();
         assertEquals(subject2.getVariableForTestingSingletonClass(), 40);
+        
+        
 
 
     }
